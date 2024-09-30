@@ -13,6 +13,6 @@ jobs:
       - name: install dependencies
         run: npm install axios
       - name: Run Test
-        run: echo Run Test
+        run:  echo Run Test
 
  
