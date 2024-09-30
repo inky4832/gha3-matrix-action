@@ -2,6 +2,9 @@ name: Matrix workflow
 on: push
 jobs:
   test:
+    strategy:	
+      matrix:
+         version: [18,20]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

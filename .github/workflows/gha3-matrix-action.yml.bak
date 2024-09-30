@@ -2,6 +2,9 @@ name: Matrix workflow
 on: push
 jobs:
   test:
+    strategy:	
+      matrix:
+         version: [18,20]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,6 +16,6 @@ jobs:
       - name: install dependencies
         run: npm install axios
       - name: Run Test
-        run: echo Run Test
+        run:  echo Run Test
 
  
