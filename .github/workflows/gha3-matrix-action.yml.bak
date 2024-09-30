@@ -4,7 +4,7 @@ jobs:
   test:
     strategy:
       matrix:
-	    version: [18, 20]
+	 version: [18, 20]
     continue-on-error: true
     runs-on: ubuntu-latest
     steps:
